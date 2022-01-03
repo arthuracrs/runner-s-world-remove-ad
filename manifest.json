@@ -1,0 +1,22 @@
+{
+    "name": "runner's world remove ad",
+    "description": "runner's world remove ad",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.runnersworld.com/*"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
